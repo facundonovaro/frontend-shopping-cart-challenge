@@ -42,10 +42,10 @@ export default ({
                       className="count"
                       onClick={
                         product.offer === "2x1"
-                          ? product.quantity > 0
+                          ? product.quantity > 2
                             ? () => scan(product.id, product.quantity - 2)
                             : () => handleDelete(product.id)
-                          : product.quantity > 0
+                          : product.quantity > 1
                           ? () => scan(product.id, product.quantity - 1)
                           : () => handleDelete(product.id)
                       }
